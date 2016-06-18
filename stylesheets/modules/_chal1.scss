@@ -1,0 +1,240 @@
+
+.balloon {
+    max-width: 100px;
+    max-height:150px;
+    display: block;
+}
+
+@media (max-width: 550px) {
+    .balloon {
+        max-width: 80px;
+        max-height: 100px;
+    }
+}
+
+@keyframes flyAndScale {  
+    0% {
+        transform: translate(0%, 0%)
+        scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, 100%)
+        scale(2);
+        opacity: 0.4;
+        
+    } 
+    100% {
+        transform: translate(0%, 0%)
+        scale(1);
+        opacity: 1;
+        
+    }
+} 
+
+.flyAndScale_0 {
+        animation-name: flyAndScale;
+        animation-play-state: running;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;	
+    }
+
+.flyAndScale_1 {
+        animation-name: flyAndScale;
+        animation-play-state: running;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;	
+    }
+
+.flyAndScale_2 {
+        animation-name: flyAndScale;
+        animation-play-state: running;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;	
+    }
+
+.flyAndScale_3 {
+        animation-name: flyAndScale;
+        animation-play-state: running;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;	
+    }
+.flyAndScale_4 {
+        animation-name: flyAndScale;
+        animation-play-state: running;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;	
+    }
+
+.flyAndScale_5 {
+        animation-name: flyAndScale;
+        animation-play-state: running;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;	
+    }
+.flyAndScale_6 {
+        animation-name: flyAndScale;
+        animation-play-state: running;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;	
+    }
+
+.flyAndScale_7 {
+        animation-name: flyAndScale;
+        animation-play-state: running;
+        animation-duration: 11s;
+        animation-iteration-count: infinite;	
+    }
+
+   @keyframes floatLightly {  
+    0% {
+        transform: translate(0%, 0%)
+        scale(1);
+    }
+    25% {
+        transform: translate(-50%, 50%)
+        scale(0);
+        
+    } 
+    50% {
+        transform: translate(-50%, 50%)
+        scale(1.5);
+        
+    } 
+    75% {
+        transform: translate(-50%, 50%)
+        scale(0);
+        
+    } 
+    100% {
+        transform: translate(0%, 0%)
+        scale(1);
+    }
+} 
+
+
+
+.floatLightly_0 {
+        animation-name: floatLightly;
+        animation-play-state: running;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;	
+    }
+
+.floatLightly_1 {
+        animation-name: floatLightly;
+        animation-play-state: running;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;	
+    }
+
+.floatLightly_2 {
+        animation-name: floatLightly;
+        animation-play-state: running;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;	
+    }
+
+.floatLightly_3 {
+        animation-name: floatLightly;
+        animation-play-state: running;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;	
+    }
+.floatLightly_4 {
+        animation-name: floatLightly;
+        animation-play-state: running;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;	
+    }
+
+.floatLightly_5 {
+        animation-name: floatLightly;
+        animation-play-state: running;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;	
+    }
+.floatLightly_6 {
+        animation-name: floatLightly;
+        animation-play-state: running;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;	
+    }
+
+.floatLightly_7 {
+        animation-name: floatLightly;
+        animation-play-state: running;
+        animation-duration: 11s;
+        animation-iteration-count: infinite;	
+    }
+
+  @keyframes fly {  
+    0% {
+        transform: translate(0%, 0%)
+    }
+    50% {
+        transform: translate(50%, 100%)
+        
+    }
+    100% {
+        transform: translate(0%, 0%)
+    }
+} 
+
+
+
+.fly_0 {
+        animation-name: fly;
+        animation-play-state: running;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;	
+    }
+
+.fly_1 {
+        animation-name: fly;
+        animation-play-state: running;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;	
+    }
+
+.fly_2 {
+        animation-name: fly;
+        animation-play-state: running;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;	
+    }
+
+.fly_3 {
+        animation-name: fly;
+        animation-play-state: running;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;	
+    }
+.fly_4 {
+        animation-name: fly;
+        animation-play-state: running;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;	
+    }
+
+.fly_5 {
+        animation-name: fly;
+        animation-play-state: running;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;	
+    }
+.fly_6 {
+        animation-name: fly;
+        animation-play-state: running;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;	
+    }
+
+.fly_7 {
+        animation-name: fly;
+        animation-play-state: running;
+        animation-duration: 11s;
+        animation-iteration-count: infinite;	
+    }
+
+        
