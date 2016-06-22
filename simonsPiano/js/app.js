@@ -145,7 +145,6 @@ function noteClicked(elNote) {
 }
 
 function noteReleased(elNote) {
-    setTimeout(function () {
         if (!gState.isUserTurn) return;
         var noteIndex = +elNote.getAttribute('data-note');
         console.log('noteIndex is: ', noteIndex);
@@ -180,7 +179,6 @@ function noteReleased(elNote) {
             // when game over update last score
             gScore.last = gScore.curr;
         }
-    }, 300);
     console.log('Note', NOTES[noteIndex]);
     
 }
