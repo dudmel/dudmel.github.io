@@ -31,11 +31,6 @@ var gSounds = {win: 'sounds/win.mp3',
 function init() {
     renderNotes(NOTES); 
     renderBestScore();
-    if ('addEventListener' in document) {
-    document.addEventListener('DOMContentLoaded', function() {
-        FastClick.attach(document.body);
-    }, false);
-}
 }
 
 function playSound(sound) {
