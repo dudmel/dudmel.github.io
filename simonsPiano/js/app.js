@@ -145,40 +145,42 @@ function noteClicked(elNote) {
 }
 
 function noteReleased(elNote) {
-    if (!gState.isUserTurn) return;
-    var noteIndex = +elNote.getAttribute('data-note');
-    console.log('noteIndex is: ', noteIndex);
+    setTimeout(function () {
+        if (!gState.isUserTurn) return;
+        var noteIndex = +elNote.getAttribute('data-note');
+        console.log('noteIndex is: ', noteIndex);
 
-    elNote.classList.remove('playing');
+        elNote.classList.remove('playing');
     
-    if (noteIndex === gState.seqNoteIndexes[gState.currNoteIndexToClick]) {
-        console.log('User OK!');
-        playSound(NOTES[noteIndex].sound);
+        if (noteIndex === gState.seqNoteIndexes[gState.currNoteIndexToClick]) {
+            console.log('User OK!');
+            playSound(NOTES[noteIndex].sound);
         
-        gState.currNoteIndexToClick++;
-        if (gState.currNoteIndexToClick === gState.seqNoteIndexes.length) {
+            gState.currNoteIndexToClick++;
+            if (gState.currNoteIndexToClick === gState.seqNoteIndexes.length) {
+                gState.isUserTurn = false;
+                setTimeout(function () {
+                    // updates the score every turn
+                    gScore.curr += gPointsPerRound;
+                    renderScore(gScore.curr);
+                    // finds the best score and update it to the localStorage
+                    findBestScore();
+                    updateBestScoreTolocalStorage();
+
+                    computerTurn();
+                }, 1000);
+            }
+        } else {
+
+            console.log('User Wrong!');
+            playSound(gSounds.wrong);
             gState.isUserTurn = false;
-            setTimeout(function(){
-                // updates the score every turn
-                gScore.curr += gPointsPerRound;
-                renderScore(gScore.curr);
-                // finds the best score and update it to the localStorage
-                findBestScore();
-                updateBestScoreTolocalStorage();
+            setTimeout(gameOver, 1000);
 
-                computerTurn();
-            }, 1000);
-        } 
-    } else {
-
-        console.log('User Wrong!');
-        playSound(gSounds.wrong);
-        gState.isUserTurn = false;
-        setTimeout(gameOver, 1000);
-
-        // when game over update last score
-        gScore.last = gScore.curr;
-    }
+            // when game over update last score
+            gScore.last = gScore.curr;
+        }
+    }, 300);
     console.log('Note', NOTES[noteIndex]);
     
 }
