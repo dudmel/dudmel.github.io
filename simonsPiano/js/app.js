@@ -86,7 +86,7 @@ function renderLevel(level) {
 function renderNotes(notes) {
     // mapping notes to html tags
     var strHtmls = notes.map(function(note, i){
-        var strHtml =  '<div class="note note' + i + '" ontouchstart="noteClicked(this)" data-note="'+i+'"  ontouchend="noteReleased(this)"' + 
+        var strHtml =  '<div class="note note' + i + '" ontouchstart="noteReleased(this)" data-note="'+i+'"' + 
                              'style="background:'+ note.color +'"> <div class="innerCircle"> </div>' +
                         '</div>';
         return strHtml;
@@ -139,12 +139,16 @@ function playSeq() {
    
 }
 
-function noteClicked(elNote) {
-    if (!gState.isUserTurn) return;
-    elNote.classList.add('playing');
-}
+// function noteClicked(elNote) {
+//     if (!gState.isUserTurn) return;
+//     elNote.classList.add('playing');
+// }
 
 function noteReleased(elNote) {
+     if (!gState.isUserTurn) return;
+     elNote.classList.add('playing');
+    setTimeout(function(){
+
         if (!gState.isUserTurn) return;
         var noteIndex = +elNote.getAttribute('data-note');
         console.log('noteIndex is: ', noteIndex);
@@ -178,7 +182,7 @@ function noteReleased(elNote) {
 
             // when game over update last score
             gScore.last = gScore.curr;
-        }
+        }}, 300)
     console.log('Note', NOTES[noteIndex]);
     
 }
