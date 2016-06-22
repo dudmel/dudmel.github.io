@@ -86,7 +86,7 @@ function renderLevel(level) {
 function renderNotes(notes) {
     // mapping notes to html tags
     var strHtmls = notes.map(function(note, i){
-        var strHtml =  '<div class="note note' + i + '" onclick="noteClicked(this)" data-note="'+i+'"  onmouseup="noteReleased(this)"' + 
+        var strHtml =  '<div class="note note' + i + '" onmousedown="noteClicked(this)" data-note="'+i+'"  onclick="noteReleased(this)"' + 
                              'style="background:'+ note.color +'"> <div class="innerCircle"> </div>' +
                         '</div>';
         return strHtml;
