@@ -122,17 +122,15 @@ function playSeq() {
         renderLevel(level);
            
         setTimeout(function playNote() {
-            setTimeout(function () {
-                elNotes[seqNoteIndex].classList.add('playing');
-            }, 300);
+            elNotes[seqNoteIndex].classList.add('playing');
             playSound(NOTES[seqNoteIndex].sound);
             
             setTimeout(function donePlayingNote() {
                 elNotes[seqNoteIndex].classList.remove('playing');
-            }, noteTimeout + 300);
+            }, noteTimeout);
             
             console.log('Playing: ', NOTES[seqNoteIndex].sound);
-        }, noteDuration * i + noteTimeout);
+        }, noteDuration * i + noteTimeout -300);
     });
     setTimeout(function() {
         console.log('Done Playing Sequence!!');
