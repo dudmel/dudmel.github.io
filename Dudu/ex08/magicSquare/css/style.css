@@ -1,0 +1,10 @@
+td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-color: darkgreen;
+    border-width: 3px;
+    border-style: solid;
+    background-color: green;
+    
+}

@@ -1,0 +1,7 @@
+.imgContainer > img {
+    height: 200px;
+}
+
+.clicked {
+    border: 1px solid deeppink;
+}

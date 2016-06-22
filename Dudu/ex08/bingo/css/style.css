@@ -1,0 +1,40 @@
+td {
+    height: 30px;
+    width:  30px;
+    text-align: center;
+    border-style: solid;
+}
+
+.table1 {
+    float: left;
+    top: 105px;
+    position: absolute;
+    left: 25px;
+}
+
+.table2 {
+    position: absolute;
+    top: 105px;
+    float: left;
+    left: 250px;
+}
+
+button {
+    position: absolute;
+    left: 76px;
+    top: 320px;
+}
+.restart {
+    left:224px;
+}
+.numbers {
+    background-color: aqua;
+    height: 250px;
+    text-align: center;
+    left: 25px;
+    top: 350px;
+    width: 420px;
+    position: absolute;
+    font-size: 25px;
+    border: 5px solid black;
+}
