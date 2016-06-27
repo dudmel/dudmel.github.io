@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Challenge 2</title>
+  <link rel="stylesheet" href="lib\bootstrap\stylesheets\bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/main.css"/>
+  <link rel="stylesheet" href="stylesheets/chals.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="initChal('chal2')">
+ <main>
+    <div class="gameContainer">
+      <div class="chalContainer"></div>
+      <div class="question"> Drag the right solution to the matching exrecise </div>
+      <div class="options"> </div>
+    </div>
+      
+    <div class="btnsContainer">
+      <select name="level" class="btn" onchange="saveLevel(+(this.value))" id="levelPicker">
+        <option value="">Level</option>
+        <option value="1" >Beginner</option>
+        <option value="2">Intermidate</option>
+        <option value="3">Expert</option>
+      </select>
+      
+      <button onclick="renderChal2()" class="startBtn btn btn-primary"> Start Game! </button>
+      <a href="index.html" class="btn btn-danger">Home</a>
+      <a href="chal3.html" class="nextBtn btn btn-success" style="display: none">Next Challenge</a>
+    </div>
+
+  </main>
+    
+    <footer>
+      &copy Dudu & Amalin inc. 2016  
+    </footer>
+
+    <div class="message" style="display: none">  <div>
+  
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/jquery/jquery-ui.min.js"></script>
+  <script src="lib//jquery/jquery.ui.touch-punch.min.js"></script>  
+  <script src="lib/bootstrap/javascripts/bootstrap.min.js">
+  <script src="js/app.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/chals.js"></script>
+  <script src="js/chal2.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Challenge 4</title>
+  <!--<link rel="stylesheet" href="stylesheets/main.css" />-->
+  <link rel="stylesheet" href="lib\bootstrap\stylesheets\bootstrap.min.css">
+  
+  <link rel="stylesheet" href="stylesheets/main.css"/>
+  <link rel="stylesheet" href="stylesheets/chals.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="initChal('chal4')">
+  <main>
+    <!--<button onclick="chalCompleted('chal4')" class="startBtn btn btn-primary"> Debug Chal Completed </button>-->
+
+    <div class="gContainer row">
+      <div class="pictureContainer chal4pic"> </div>
+        <div class="question"> Drag the mising numbers to their place  </div>
+      <div id="numbersWraper"></div>
+      <div id="missingsWraper"></div>
+
+      <button onclick="initChal4()" class="startBtn btn btn-primary"> Start Challenge! </button>
+
+    </div>    <!--gContainer-->
+    </div>
+
+    <div class="btnsContainer">
+      <a href="index.html" class="btn btn-danger">Home</a>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy Dudu & Amalin inc. 2016
+  </footer>
+  <div class="message" style="display: none"> Great! Challenge Completed!<div>
+     <script src="lib/jquery/jquery.js"></script>
+      <script src="lib/jquery/jquery-ui.min.js"></script>
+      <script src="lib//jquery/jquery.ui.touch-punch.min.js"></script>
+      <script src="lib/bootstrap/javascripts/bootstrap.min.js">
+        <script src="js/app.js">
+      </script>
+      <script src="js/chals.js"></script>
+      <script src="js/utils.js"></script>
+      <script src="js/chal4.js"></script>
+</body>
+
+</html>

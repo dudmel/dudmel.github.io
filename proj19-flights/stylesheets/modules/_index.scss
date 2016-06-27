@@ -1,0 +1,78 @@
+$mainColor: #286090; 
+$mainTextColor: black;
+
+.homePage {
+  color: silver;
+  background-color: $mainColor;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 82.5vh;
+  h1 {
+    img {
+      display: inline;
+    }
+    font-size: 5em;
+    font-weight: bold;
+  }
+}
+
+.search {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  select {
+    width: 40vw;
+    max-width: 300px;
+    border-radius: 5px;
+    color: #222;
+    font-weight: 700;
+  }
+  button {
+    width: 30vw;
+    max-width: 200px;
+    margin: 10px;
+  }
+}
+
+.serachResults {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.resultFlight {
+  margin: auto;
+  margin-bottom: 5px;
+  width: 60%;
+  padding: 1%;
+  background-color: silver;
+  color: $mainColor;
+  display: flex;
+  flex-direction: column;
+  button {
+    width: 200px;
+    align-self: center;
+  }
+  font-size: 1.5em;
+}
+.airportsList{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-progress-appearance: none;
+  padding: 2px 16px;
+  margin-right: 10px;
+}
+
+.modalMessage {
+font-size: 1.2em;
+  font-weight: bold;
+}
+
+.errorMessage { 
+  
+  color: red;
+} 
+
+.successMessage {
+  color: blue;
