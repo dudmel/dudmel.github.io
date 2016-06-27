@@ -1,0 +1,172 @@
+
+@media (min-width: 416px) {
+  .scores {
+    font-size: 1.5em;
+  }
+  
+  .scoreContainer, .bestScoreContainer {
+    border: 4px ridge silver;
+  }
+}
+
+@media (max-width: 660px) {
+  .piano {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .scores {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 661px) {
+  .piano {
+    width: 500px;
+    height: 500px;
+  }
+   .scores {
+    font-size: 2em;
+  }
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  background-image: linear-gradient(to bottom, black, silver);
+  margin: auto;
+  width: 50%;
+  color: silver;
+  text-align: center;
+}
+
+.piano {
+  background-color: black;
+  padding: 50px;
+  border: 15px ridge gray;  
+  display:flex;
+  flex-wrap: wrap;
+  margin: auto;
+  color: silver;
+  font-size: 10em;
+  font-family: fantasy;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.note  {
+  width: 50%;
+  height: 50%;
+  border: 4px outset silver;
+  text-align: center;
+  opacity: 0.65;
+}
+
+.note0 {
+  
+  border-top-left-radius:   100%;
+}
+.note1 {
+  border-top-right-radius:   100%;
+}
+.note2 {
+  border-bottom-left-radius:   100%;
+}
+.note3 {
+  border-bottom-right-radius:   100%;
+}
+
+.playing {
+  border-style: inset;
+  opacity: 1;
+}
+
+.startBtn {
+  margin: auto;
+}
+
+.muteBtn {
+  margin: auto; 
+  /*float: right;*/
+  display: block;
+}
+
+.innerCircle {
+  height: 35%;
+  width: 35%;
+  background-color: black;
+  position: relative;
+}
+
+.note0>.innerCircle {
+  border-top-left-radius: 100%;
+  border-top: 4px outset silver;
+  border-left: 4px outset silver;
+  left: 68%;
+  top: 69%;
+  border: black outset silver;
+}
+
+.note1>.innerCircle {
+  border-top-right-radius: 100%;
+  border-top: 4px outset silver;
+  border-right: 4px outset silver;
+  top:69%;
+  left: -2%;
+  border: black inset silver;
+}
+
+.note2>.innerCircle {
+  border-bottom-left-radius: 100%;
+  border-bottom: 4px outset silver;
+  border-left: 4px outset silver;
+  left:68%;
+  top:-2%;
+  border: black inset silver;
+}  
+
+.note3>.innerCircle {
+  border-bottom-right-radius: 100%;
+  border-bottom: 4px outset silver;
+  border-right: 4px outset silver;
+  left: -2%;
+  top: -2%;
+  border: black outset silver;
+}
+
+@media (max-width: 660px) {
+  .scores {
+    bottom: 0;
+    /*width:100%;*/
+    width: 300px;
+    text-align: center;
+    color: silver;
+    background-color: #3e2f2f;
+    font-family: fantasy;
+    border: 4px ridge silver;
+    display: block;
+    margin: auto;
+    
+  }
+}
+
+@media (min-width: 661px) {
+  .scores {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    float: left;
+    width:20%;
+    margin-top: 10%;
+    margin-left: 2%;
+    text-align: center;
+    color: silver;
+    background-color: #3e2f2f;
+    font-family: fantasy;
+    padding: 1%;
+    border: 4px ridge silver;
+  }
+}
