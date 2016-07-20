@@ -7,7 +7,8 @@ let gProjects = [
     'mineSweeper',
     'simonsPiano',
     'anotherHome',
-    'homePage'
+    'homePage',
+    'shop'
 ]
 
 function init() {
