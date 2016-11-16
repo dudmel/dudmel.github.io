@@ -1,0 +1,92 @@
+header {
+    background-image: linear-gradient(to bottom, blue, black);
+    color: silver;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    float: top;
+}
+
+body {
+    border-style: outset;
+    border-width: 5px;
+    border-color: blue;
+    border-radius: 10px;
+    position: absolute;
+    align-items:  center;
+}
+td {
+    height: 30px;
+    width:  30px;
+    text-align: center;
+    border-style: outset;
+    border-width: 3px;
+    font-size: 150%;
+    border-radius: 7px;
+}
+
+.hidden {
+    border-color: midnightblue;
+    background-image: linear-gradient(to bottom, blue, midnightblue);
+    background-color: darkblue;
+}
+
+.revealed {
+    background-image: linear-gradient(to bottom, blue, white);
+    border-color: gray;    
+}
+
+img {
+    height: 25px;
+    width :25px;
+}
+
+.board {
+    position: relative;
+    border-color: midnightblue;
+    background-image: linear-gradient(to bottom, black, blue);
+}
+
+.counters {
+    position: relative;
+    background-image: linear-gradient(to bottom, dimgray, white);
+    border-color: gray;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 20px;
+    width: 50%;
+
+    color: midnightblue;
+    text-align: center;
+    font-size: 120%;
+}
+
+.stopWatch {
+    position: relative;
+    background-image: linear-gradient(to bottom, dimgray, white);
+
+    border-color: gray;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 20px;
+    width: 50%;
+    height: 45px;
+    color: midnightblue;
+    text-align: center;
+    font-size: 120%;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, blue, black);
+    color: silver;
+    font-size: 30px;
+    text-align: center;
+    float: bottom;
+    position: relative;
+}
+
+.button {
+    position: relative;
+    float: right;
+    right: 20%;
+}
